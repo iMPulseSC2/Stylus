@@ -1,3 +1,4 @@
+@-moz-document domain("persienngiganten.soladmin.se") {
 /* Variables */
 :root {
     --dark-grey: #202020;
@@ -239,12 +240,14 @@ textarea {
     background: var(--dark-grey);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .input-box label:hover {
     background: var(--dark-grey-4);
     border-color: var(--dark-orange);
 }
-
 
 .input-box label input[type="radio"] {
     appearance: none;
@@ -258,7 +261,6 @@ textarea {
     cursor: pointer;
     position: relative;
     margin-right: 10px;
-    vertical-align: middle;
 }
 
 /* Add a custom dot inside when checked */
@@ -413,6 +415,7 @@ body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul > li:hove
 
 /* Ordrar Page */
 /* Pågående montage */
+
 div.box-form h2 {
     background: var(--dark-grey-3);
     font-size: 14px;
@@ -632,9 +635,24 @@ body.order-edit ul.order-rows li div.row-data {
 table.list th.order {
     padding: 0;
     border: 1px solid var(--light-grey);
-    background: #262626;
+    background: var(--darker-grey);
     border-bottom: 0;
 }
+
+ul.tabs li a {
+    border-inline: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+ul.tabs li.active a {
+    background: var(--dark-grey-4);
+    border-inline: 1px solid var(--dark-orange);
+}
+
+ul.tabs li a:hover {
+    background: var(--dark-grey-4) !important;
+}
+
 table.list td {
     border-color: var(--light-grey);
     border: 1px solid var(--light-grey);
@@ -802,7 +820,7 @@ body.order-edit .add-buttons > a > span {
 }
 
 .input-box label:hover {
-    background: var(--dark-grey-3);
+    background: var(--dark-grey-4);
 }
 
 /* Vävinformation */
@@ -973,6 +991,12 @@ body.booking form.default .booking-customer .booking-address {
 
 /* END Produkt Page */
 /* Kalender Page */
+div.full-calendar .calendar-content div.left-column .users,
+div.full-calendar .calendar-content div.left-column .types,
+div.full-calendar .calendar-content div.left-column .view {
+    border-color: var(--grey-2);
+}
+
 div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head {
     background: var(--dark-grey-2);
 }
@@ -996,25 +1020,19 @@ div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar
 
 /* Event background block First */
 div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block.block-first {
-    border-bottom: 1px dotted var(--grey);
+    border-bottom: 1px dotted var(--light-grey);
     background: var(--dark-grey);
 }
-div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block {
-    border-bottom: 1px solid var(--light-grey);
-    border-left: 1px solid var(--light-grey);
-}
-
 /* Event background block Second */
 div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block {
     background: var(--dark-grey);
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--grey-2);
     border-left: 1px solid var(--light-grey);
 }
-
 div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .column.today a {
-    background: var(--dark-grey);
-    border: 1px solid var(--orange);
-    border-width: 0px 0px 2px 0px;
+    background: var(--dark-grey-4);
+    /* border: 1px solid var(--orange);
+    border-width: 0px 0px 2px 0px;*/
 }
 
 div.full-calendar .top .navigation .date-header span.week {
@@ -1023,12 +1041,12 @@ div.full-calendar .top .navigation .date-header span.week {
 
 /* Month calendar */
 div.full-calendar .calendar-content div.left-column .mini-calendar {
-    background: var(--darker-grey);
+    background: var(--dark-grey-4);
 }
 
 div.full-calendar .calendar-content div.left-column .mini-calendar table th.week,
 div.full-calendar .calendar-content div.left-column .mini-calendar table td.week {
-    background: var(--dark-grey-2);
+    background: var(--dark-grey-3);
 }
 
 /* Weekday */
@@ -1049,6 +1067,22 @@ div.full-calendar .calendar-content div.left-column .mini-calendar table th.acti
 div.full-calendar .calendar-content div.left-column .mini-calendar table td.active a {
     background: var(--light-grey);
     color: var(--color--main-text);
+}
+
+div.full-calendar .calendar-content div.left-column .users ul li {
+    border-radius: 300px;
+}
+
+div.full-calendar .calendar-content div.left-column .view {
+    padding-right: 12px;
+}
+
+div.full-calendar .calendar-content div.left-column .types {
+    padding-right: 12px;
+}
+
+div.full-calendar .calendar-content div.left-column .types ul li {
+    border-radius: 300px;
 }
 
 /* Hover over users */
@@ -1079,7 +1113,14 @@ a.close-info:hover {
     background: var(--dark-grey-3);
 }
 
-
+div.full-calendar .calendar-content div.left-column .users {
+    padding-right: 12px;
+}
+div.full-calendar .calendar-content div.left-column .view ul li {
+    border-radius: 300px;
+    
+    
+}
 /* Scrollbar */
 div.full-calendar .calendar-content div.left-column {
     scrollbar-color: var(--dark-grey-3) var(--light-grey);
@@ -1090,11 +1131,11 @@ div.full-calendar .calendar-content div.calendar-holder .calendar-week {
 }
 
 div.full-calendar .calendar-content div.calendar-holder .event a.event-link {
-    box-shadow: inset 0 0 0px #000;
-    transition: 0.2s ease;
+    box-shadow: inset 0 0 0px transparent;
+    transition: 0.1s ease;
 }
 div.full-calendar .calendar-content div.calendar-holder .event:hover a.event-link {
-    box-shadow: inset 0 0 3px #000;
+    box-shadow: inset 0 0 40px #000;
 }
 
 /* Search bar */
@@ -1186,8 +1227,46 @@ body.stats-graph .content .left-column form .field .filter-data .radios div inpu
 }
 
 /* END Admin Pages */
+/* Kundoffert - länkad sida */
+div.holder-login {
+    background: var(--dark-grey);
+}
+
+div.holder-login .content {
+    background: var(--dark-grey-2);
+    border: 1px solid var(--light-grey)
+}
+
+.block.quote .holder {
+    background: var(--dark-grey-2);
+    border: 1px solid var(--light-grey)
+}
+div.box-info,
+div.no-thanks {
+    background: var(--dark-grey-3);
+    border: 1px solid #CCC;
+}
+
+.holder .box {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.fabric-engine,
+.fabric-info,
+.field-edit {
+    background: var(--dark-grey);
+}
+
 /* MOBILE */
 @media screen and (max-width: 1100px) {
+    
+    /*.header div.menu ul.menu li a {
+        font-size: 16px;
+        font-weight: 550;
+        padding: 7px 0px 7px 10px;
+    }*/
+    
     .header .mobile-menu-bar a.show-mobile-menu {
         background: var(--orange);
     }
@@ -1270,4 +1349,5 @@ body.stats-graph .content .left-column form .field .filter-data .radios div inpu
     ul.table-list.bookings li div {
         color: var(--grey);
     }
+}
 }
