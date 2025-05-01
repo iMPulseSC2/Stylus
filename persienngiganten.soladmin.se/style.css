@@ -1260,11 +1260,11 @@ div.no-thanks {
 /* MOBILE */
 @media screen and (max-width: 1100px) {
     
-    /*.header div.menu ul.menu li a {
+    .header div.menu ul.menu li a {
         font-size: 16px;
         font-weight: 550;
         padding: 7px 0px 7px 10px;
-    }*/
+    }
     
     .header .mobile-menu-bar a.show-mobile-menu {
         background: var(--orange);
