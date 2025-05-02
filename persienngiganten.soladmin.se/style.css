@@ -41,7 +41,8 @@
 }
 
 
-body {
+body,
+html {
     font-family: 'Montserrat', verdana, sans-serif;
     background-color: var(--dark-grey);
 }
@@ -342,7 +343,7 @@ body.login .main .content .loginbox {
     font-family: 'Montserrat', Verdana, sans-serif;
     text-decoration: none;
     padding: 0 15px;
-    font-size: 11px;
+    font-size: 12px;
 
     text-transform: uppercase;
     font-weight: 550;
@@ -414,7 +415,6 @@ body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul > li:hove
 
 /* Ordrar Page */
 /* Pågående montage */
-
 div.box-form h2 {
     background: var(--dark-grey-3);
     font-size: 14px;
@@ -427,7 +427,7 @@ div.box-form h2 {
 div.box-form .body {
     display: inline-block;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 div.box-form {
@@ -1117,8 +1117,6 @@ div.full-calendar .calendar-content div.left-column .users {
 }
 div.full-calendar .calendar-content div.left-column .view ul li {
     border-radius: 300px;
-    
-    
 }
 /* Scrollbar */
 div.full-calendar .calendar-content div.left-column {
@@ -1259,15 +1257,23 @@ div.no-thanks {
 
 /* MOBILE */
 @media screen and (max-width: 1100px) {
-    
+
     .header div.menu ul.menu li a {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 550;
         padding: 7px 0px 7px 10px;
     }
-    
+
     .header .mobile-menu-bar a.show-mobile-menu {
         background: var(--orange);
+    }
+
+    .header div.menu ul.menu li.active ul li a {
+        background: var(--dark-grey-4);
+    }
+
+    div.full-calendar .calendar-content div.left-column {
+        background: var(--dark-grey);
     }
 
     .filter-form .box-filter .field ul.radios li label {
@@ -1326,26 +1332,139 @@ div.no-thanks {
     }
 
     ul.table-list.bookings li div.name {
-        color: #fff;
+        color: var(--orange);
     }
 
-    ul.table-list.bookings li div.booking_id {
-        color: var(--grey);
-    }
-
-    ul.table-list.bookings li div.booking_type {
-        color: var(--grey);
-    }
-
-    ul.table-list.bookings li div.address {
-        color: var(--grey);
-    }
-
-    ul.table-list.bookings li div.user {
-        color: var(--grey);
-    }
-
+    ul.table-list.bookings li div.booking_id,
+    ul.table-list.bookings li div.booking_type,
+    ul.table-list.bookings li div.address,
+    ul.table-list.bookings li div.user,
     ul.table-list.bookings li div {
-        color: var(--grey);
+        color: var(--color--main-text);
+    }
+
+
+    body.customer .block {
+        background: var(--dark-grey);
+    }
+    body.customer .block a {
+        margin-right: 5px;
+    }
+
+    ul.table-list.orders li div.date {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.value {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.user {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.exported a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.order_type_done a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.supplier a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li div.name {
+        color: var(--orange);
+    }
+    ul.table-list.quotes li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.quotes div.order_id,
+    ul.table-list.quotes div.name {
+        color: var(--orange);
+    }
+    ul.table-list.users li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.users li div.name {
+        color: var(--orange);
+    }
+    .filter-form a.show-filter {
+        color: var(--orange);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .times .week {
+        background: var(--dark-grey-4);
+    }
+
+    ul.table-list.users li div.city {
+        color: var(--color--main-text);
+    }
+    ul.table-list.users li div.phone {
+        color: var(--color--main-text);
+    }
+
+    body.customer .block a {
+        margin-right: 5px;
+    }
+    ul.table-list.orders li div.supplier a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.exported a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.order_type_done a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li div.order_id {
+        color: var(--orange);
+    }
+    ul.table-list.quotes li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.quotes div.order_id {
+        color: var(--orange);
+    }
+    ul.table-list.quotes div.name {
+        color: var(--orange);
+    }
+
+    body.order-edit ul.order-rows li div.price-block,
+    body.order-edit ul.order-rows li div.col-name {
+        border-right: 0px solid var(--light-grey);
+    }
+    body.order-edit ul.order-rows li div.price-block div.col-amount,
+    body.order-edit ul.order-rows li div.price-block div.col-price,
+    body.order-edit ul.order-rows li div.price-block div.col-discount,
+    body.order-edit ul.order-rows li div.price-block div.col-tg,
+    body.order-edit ul.order-rows li div.price-block div.col-tb {
+        border-right: 0px solid var(--light-grey);
+    }
+    
+    body.order-edit ul.order-rows li div.col-icons a {
+        background: var(--dark-grey-2);
+        border-color: var(--light-grey);
+    }
+    body.order-edit ul.order-rows li div.col-icons a:hover {
+        background: var(--dark-grey-3);
+    }
+        body.order-edit ul.order-rows li div.col-icons a span{
+
+        color: var(--color--main-text);
+        
+    }
+    body.order-edit ul.order-rows li div.col-icons a:hover span {
+        color: var(--orange);
+    }
+    
+    body.order-edit ul.order-rows li div.col-icons a.button-remove {
+        background: #c31f1f;
+    }
+    body.order-edit ul.order-rows li div.col-icons a.button-remove:hover span{
+        color: var(--grey) !important;
+    }
+    body.order-edit ul.order-rows.order-rows-head .col-icons a {
+        color: var(--orange);
     }
 }
