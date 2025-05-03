@@ -596,6 +596,16 @@ body.panel .main .content .stats form .show-buttons div label:hover {
     border-color: var(--orange);
 }
 
+/* More News */
+table.list td.link a {
+    color: var(--color--main-text);
+    font-weight: 400;
+}
+table.list td.link a:hover {
+    color: var(--dark-orange);
+}
+
+
 
 /* End News Page */
 /* Offerter Page */
@@ -616,13 +626,9 @@ body.order-edit ul.order-rows li div.row-data {
 }
 
 .filter-form .box-filter {
-    display: flex;
     border: 1px solid var(--light-grey);
     background: var(--dark-grey-2);
-    flex-direction: row;
     padding: 10px 0 0 10px;
-    align-items: stretch;
-    border-radius: 2px;
 }
 
 .filter-form .box-filter .field label {
@@ -1276,6 +1282,14 @@ div.no-thanks {
         background: var(--dark-grey);
     }
 
+    .filter-form .box-filter .field ul.radios {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+
     .filter-form .box-filter .field ul.radios li label {
         border: 1px solid var(--light-grey);
         background: var(--dark-grey);
@@ -1329,6 +1343,14 @@ div.no-thanks {
         box-shadow: 0 0 7px #0000007d;
         background: var(--dark-grey-2);
         border-left: 5px solid transparent;
+    }
+
+    ul.table-list li:hover {
+        background: var(--dar-grey-4);
+    }
+
+    .filter-form .box-filter .field {
+        border-color: var(--grey-2);
     }
 
     ul.table-list.bookings li div.name {
@@ -1390,6 +1412,22 @@ div.no-thanks {
     }
     .header {
         box-shadow: 0 0 3px #000;
+    }
+    ul.table-list.orders li .data {
+        border-color: var(--grey-2);
+    }
+
+    ul.table-list.users li .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.orders li .remove {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.quotes .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.bookings li .data {
+        border-color: var(--grey-2);
     }
 }
 
@@ -1468,5 +1506,15 @@ div.no-thanks {
     }
     body.order-edit ul.order-rows.order-rows-head .col-icons a {
         color: var(--orange);
+    }
+
+    ul.table-list.quotes .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.orders li .remove {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.users li .data {
+        border-color: var(--grey-2);
     }
 }
