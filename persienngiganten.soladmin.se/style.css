@@ -597,12 +597,21 @@ body.panel .main .content .stats form .show-buttons div label:hover {
 }
 
 /* More News */
-table.list td.link a {
+body > div.main > div.content > table > tbody > tr > td:nth-child(1) a {
     color: var(--color--main-text);
-    font-weight: 400;
+    font-weight: 400 !important;
 }
-table.list td.link a:hover {
-    color: var(--dark-orange);
+body > div.main > div.content > table > tbody > tr > td:nth-child(3) a {
+    font-weight: 400 !important;
+}
+body > div.main > div.content > table > tbody > tr > td > b > a,
+body > div.main > div.content > table > tbody > tr > td > a {
+    color: var(--color--main-text) !important;
+    font-weight: 600;
+}
+
+body > div.main > div.content > table > tbody > tr > td > a:hover {
+    color: var(--dark-orange) !important;
 }
 
 
