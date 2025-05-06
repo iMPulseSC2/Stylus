@@ -16,6 +16,7 @@
     --lighter-grey: #c7c6c64d;
     --color--main-button-text: #fff;
     --color--main-text: #fff;
+    --blue: #182935;
 
     --color--lighter-gray: #c7c6c64d;
     --color--secondary-dark: #0e0e0e;
@@ -30,6 +31,47 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Flytta offert */
+#config-formula > div > ul {
+    border: 1px solid var(--light-grey);
+}
+
+#config-formula > div > ul > li {
+    padding: 5px;
+    background: var(--dark-grey-3);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+
+#config-formula > div > ul > li:nth-child(odd) {
+    background: var(--dark-grey-2)
+}
+
+#config-formula > div > ul > li > div.right {
+    float: none;
+}
+
+#config-formula > div > ul > li > div.right > div {
+    border: 1px solid var(--orange);
+    width: auto;
+    display: flex;
+    align-content: center
+}
+
+#config-formula > div > ul > li > div.right > div input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    background-color: var(--orange);
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
 
 
 /* FONTS */
@@ -139,6 +181,25 @@ a.button.button-r:hover {
 
 a.button.button-r:hover span {
     color: var(--color--main-text) !important;
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks .block .field a.button {
+    background: var(--dark-grey-4);
+    border-color: var(--orange);
+    color: var(--color--main-text);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks .block .field a.button:hover {
+    border-color: var(--dark-orange);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks div.edit-config a {
+    border-color: var(--orange);
+    background: var(--dark-grey-4);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks div.edit-config a:hover {
+    border-color: var(--dark-orange);
 }
 
 table.list td ul.buttons a {
@@ -1525,5 +1586,9 @@ div.no-thanks {
     }
     ul.table-list.users li .data {
         border-color: var(--grey-2);
+    }
+
+    body > div.main > div.content {
+        flex-direction: column;
     }
 }
