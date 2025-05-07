@@ -111,6 +111,10 @@ textarea {
     color: var(--color--main-white);
 }
 
+div.box-form.box-form-order-notice.box-form-float > div > div > textarea {
+    min-height: 8rem !important;
+}
+
 .ui-datepicker th {
     padding: .7em .3em;
     text-align: center;
@@ -219,6 +223,20 @@ input[type=date],
 input[type=time],
 input[type=phone],
 textarea {
+    accent-color: var(--orange) !important;
+}
+
+
+input[type=search],
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=time],
+input[type=phone],
+textarea {
     border: 1px solid var(--dark-grey-3) !important;
     background-color: var(--dark-grey-3) !important;
     color: var(--untitled-ui--white) !important;
@@ -242,6 +260,12 @@ textarea {
     color: var(--color--main-text);
     box-shadow: 0 1px 2px #1018280d;
     border: 1px solid var(--dark-grey-4) !important;
+}
+
+.filter-form .box-filter .field-submit div.btn-submit-loader {
+    border-radius: 25px;
+    background: var(--dark-grey-4);
+    border: 1px solid var(--dark-orange) !important;
 }
 
 /* Radio buttons */
@@ -1066,6 +1090,10 @@ body.booking form.default .booking-customer .booking-address {
 
 /* END Produkt Page */
 /* Kalender Page */
+div.full-calendar .calendar-content div.calendar-holder .search-result ul li a.popup-link:hover {
+    background: var(--color--secondary-dark);
+}
+
 div.full-calendar .calendar-content div.left-column .users,
 div.full-calendar .calendar-content div.left-column .types,
 div.full-calendar .calendar-content div.left-column .view {
