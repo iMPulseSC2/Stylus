@@ -443,6 +443,10 @@
             border: 1px solid var(--light-grey);
             border-width: 0 0 1px 0;
         }
+        
+        .header div.menu ul.menu li a:active {
+            color: var(--color--main-white);
+        }
 
         div.sub-menu {
             float: left;
