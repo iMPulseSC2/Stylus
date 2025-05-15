@@ -850,6 +850,15 @@
             background: var(--dark-grey-2);
         }
 
+        /* Download documents */
+        body.order-edit div.order-download ul li a.link {
+            color: var(--color--main-text);
+            background: var(--dark-grey-2);
+        }
+        body.order-edit div.order-download ul li a.link:hover {
+            background: var(--dark-grey-3);
+        }
+
         /* Priskoll Page */
         body.pricecheck .filter-form-fixed .box-filter {
             display: flex;
