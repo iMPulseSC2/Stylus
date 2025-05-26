@@ -31,6 +31,38 @@
 }
 
 
+.soladmin-pulse {
+    animation: soladmin-pulse-anim 1.5s cubic-bezier(0.4,0,0.2,1) !important;
+    outline: 1px solid var(--lighter-grey) !important;
+    outline-offset: 0px !important;
+    background-color: #fff5ec !important;
+    box-shadow: 0 0 0 4px #c7c6c64d, 0 2px 4px 0 #82828220 !important;
+    color: #222 !important;
+    transition: background 0.8s, box-shadow 0.8s, outline-width 0.8s;
+}
+@keyframes soladmin-pulse-anim {
+    0% {
+        background-color: #fff5ec;
+        box-shadow: 0 0 0 0 #91919140, 0 2px 4px 0 #55555520;
+        outline-width: 1px;
+    }
+    30% {
+        background-color: #ffe3c2;
+        box-shadow: 0 0 0 12px #91919140, 0 2px 6px 0 #55555520;
+        outline-width: 1px;
+    }
+    60% {
+        background-color: #fff5ec;
+        box-shadow: 0 0 0 8px #91919140, 0 2px 3px 0 #55555520;
+        outline-width: 1px;
+    }
+    100% {
+        background-color: transparent;
+        box-shadow: none;
+        outline-width: 0px;
+    }
+}
+
 
 /* Flytta offert */
 #config-formula > div > ul {
