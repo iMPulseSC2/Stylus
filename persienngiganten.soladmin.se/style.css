@@ -746,6 +746,10 @@ body > div.main > div.content > table > tbody > tr > td > a:hover {
     }
 }
 
+table.list tr.alert td {
+    background: #490808 !important;
+}
+
 body.order-edit ul.order-rows.order-row-list li:nth-child(2n) .row-data {
     background: var(--dark-grey);
 }
