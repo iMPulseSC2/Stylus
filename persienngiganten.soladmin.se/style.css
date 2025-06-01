@@ -32,7 +32,7 @@
 
 
 .soladmin-pulse {
-    animation: soladmin-pulse-anim 1.5s cubic-bezier(0.4,0,0.2,1) !important;
+    animation: soladmin-pulse-anim 1.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
     outline: 1px solid var(--lighter-grey) !important;
     outline-offset: 0px !important;
     background-color: #fff5ec !important;
@@ -423,12 +423,85 @@ h1 {
 }
 
 
-div.flash .ok {
+/* div.flash .ok {
     background: var(--orange);
     color: var(--color--main-text);
     border-radius: 5px;
     border: 1px solid var(--light-grey);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+div.flash .ok {
+    background: #ffffff00;
+}
+
+div.flash .error {
+    background: #ffffff00;
+}
+
+div.flash .notice {
+    background: #ffffff00;
+}
+
+div.flash {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 7s ease;
+}
+
+.ok-checkmark-span-wrapper {
+    background-image: linear-gradient( to right, #00ED5130 20%,
+    #00ED5100 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.ok-checkmark-span-wrapper:hover {
+ border-color: #00ED5130;
+}
+
+.error-x-span-wrapper{
+    background-image: linear-gradient( to right, #F0424850 20%,
+    #F0424800 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.error-x-span-wrapper:hover {
+    border-color: #F0424850;
+}
+
+.notice-excl-span-wrapper {
+    background-image: linear-gradient( to right, #FFD42650 20%,
+    #FFD42600 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.notice-excl-span-wrapper:hover {
+    border-color: #FFD42650;
 }
 
 /* Login Page */
