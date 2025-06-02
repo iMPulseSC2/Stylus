@@ -1,4 +1,4 @@
-        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
         /* Variables */
         :root {
             --dark-grey: #202020;
@@ -430,7 +430,7 @@
     border: 1px solid var(--light-grey);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }*/
-/*        div.flash .ok {
+        div.flash .ok {
             background: #ffffff00;
         }
 
@@ -441,7 +441,6 @@
         div.flash .notice {
             background: #ffffff00;
         }
-*/
         div.flash {
             padding-left: 20px;
             padding-right: 20px;
