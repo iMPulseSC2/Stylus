@@ -1779,6 +1779,17 @@ div.no-thanks {
     
     .mobile-summary-col-name {
         border-right: 1px solid var(--light-grey) !important;
+        padding: 5px 8px 5px 8px !important;
+    }
+    .mobile-summary-order-name{
+        order: 3 !important;
+    }
+    .mobile-summary-order-sum {
+        border-right: 0px !important;
+        order: 1 !important;
+    }
+    .mobile-summary-order-amount{
+        order: 2 !important;
     }
     .mobile-summary-head {
         border-right: 1px solid var(--light-grey) !important;
@@ -1786,4 +1797,13 @@ div.no-thanks {
     .mobile-summary-head-sum {
         padding: 8px;
     }
+    
+    .summary-table-mobile {
+        width: 100% !important;
+    }
+    
+    .soladmin-summary-row:hover {
+        background: var(--dark-grey-4) !important;
+    }
+    
 }
