@@ -1537,8 +1537,8 @@ div.no-thanks {
 @media screen and (max-width: 1100px) {
 
     div.flash {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
@@ -1712,6 +1712,15 @@ div.no-thanks {
 }
 
 @media screen and (max-width: 700px) {
+
+    div.flash {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
     div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .times .week {
         background: var(--dark-grey-4);
     }
