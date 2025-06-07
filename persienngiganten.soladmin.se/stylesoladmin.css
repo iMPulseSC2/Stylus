@@ -1002,6 +1002,10 @@ body.pricecheck .filter-form-fixed .box-filter {
     border-radius: 5px;
 }
 
+body.pricecheck .filter-form-fixed .box-filter .field-search span {
+    color: var(--grey) !important;
+}
+
 body.pricecheck ul.configs-groups > li ul li a,
 body.order-edit .config-add ul.configs-groups > li ul li a {
     background: var(--dark-grey);
