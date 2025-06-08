@@ -843,6 +843,10 @@ body > div.main > div.content > table > tbody > tr > td > a:hover {
     }
 }
 
+.soladmin-summary-row:hover {
+    background: var(--dark-grey-4) !important;
+}
+
 table.list tr.alert td {
     background: #490808 !important;
 }
@@ -1266,7 +1270,6 @@ body > div.main > div.content > form > div > div.field.field-order_information.f
 
 /* END Produkt Page */
 /* Kalender Page */
-
 div.mobile-only > a {
     outline: solid 8px transparent;
     border-radius: 50%;
@@ -1845,6 +1848,7 @@ div.no-thanks {
     .mobile-summary-order-name {
         order: 3 !important;
     }
+
     .mobile-summary-order-sum {
         border-right: 0px !important;
         order: 1 !important;
