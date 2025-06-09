@@ -171,8 +171,8 @@ input[type=submit] {
 input[type=submit],
 .button-yellow {
     background: var(--orange) !important;
-    color: var(--color--main-text);
-    border-radius: 25px;
+    color: var(--dark-grey-4) !important;
+    border-radius: 4px;
     border-color: var(--orange) !important;
 }
 
@@ -183,7 +183,7 @@ input[type=submit]:hover,
 
 .button-yellow {
     background: var(--orange) !important;
-    color: var(--color--main-text) !important;
+    color: var(--dark-grey-4);
     border-radius: 25px;
     transition: 0.2s ease;
 }
@@ -193,10 +193,14 @@ input[type=submit]:hover,
 }
 
 a.button.button-r {
-    background: var(--orange) !important;
-    color: var(--color--main-text);
+    background: var(--orange);
+    color: var(--dark-grey-4);
     transition: 0.2s ease;
     border-color: var(--orange);
+}
+
+.button-icon-text {
+ color: var(--color--main-text) !important;
 }
 
 a.button.remove:hover {
@@ -209,12 +213,11 @@ a.button.remove:hover span {
 
 
 a.button.button-r:hover {
-    background: var(--dark-orange) !important;
-    color: var(--color--main-text) !important;
+    background: var(--dark-orange);
 }
 
 a.button.button-r:hover span {
-    color: var(--color--main-text) !important;
+    color: var(--color--main-text);
 }
 
 body.order-edit ul.order-rows li div.row-data .blocks .block .field a.button {
@@ -657,8 +660,8 @@ div.box-form {
 }
 a.button {
     display: inline-block;
-    background: var(--dark-grey-2);
-    color: #FFF;
+    color: var(--dark-grey-2);
+    color: var(--color--main-text);
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
@@ -843,6 +846,11 @@ body > div.main > div.content > table > tbody > tr > td > a:hover {
     }
 }
 
+.button-fill-all {
+}
+.button-fill-all:hover {
+}
+
 .soladmin-summary-row:hover {
     background: var(--dark-grey-4) !important;
 }
@@ -948,11 +956,12 @@ table.list .pagination .pages a {
     font-weight: normal;
     padding: 5px 15px;
     text-decoration: none;
-    background: #262626;
+    background: var(--dark-grey-3);
     color: #FFF;
     margin-left: 3px;
     border-radius: 2px;
     transition: 0.2s ease;
+    border: solid 1px var(--dark-grey-4);
 }
 
 body > div.main > div.content > form > div > div > textarea {
@@ -965,7 +974,7 @@ body.order-edit .product-add .products .product-content div.list td {
 }
 
 table.list .pagination .pages a:hover {
-    background: var(--dark-orange);
+    background: var(--dark-grey-2);
 }
 
 /* END Offerter Page */
@@ -1059,6 +1068,7 @@ body.order-edit .config-add ul.configs-groups > li ul li a:hover {
 .config-price a.button {
     background: var(--orange);
     border-color: var(--orange);
+    color: var(--dark-grey-2);
 }
 .config-price a.button:hover {
     background: var(--dark-orange);
@@ -1164,10 +1174,12 @@ ul.tabs li a:hover {
 
 .config .values .options .help-block .help-button {
     background: #f3c828;
-    color: #000;
+    color: var(--dark-grey-2);
+    transition: background 0.2s ease;
 }
 .config .values .options .help-block .help-button:hover {
-    color: var(--orange);
+    color: var(--dark-grey-2);
+    background: #bd9a18;
 }
 
 body.order-edit ul.order-rows.order-rows-head li {
