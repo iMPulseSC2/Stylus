@@ -851,9 +851,22 @@ body > div.main > div.content > table > tbody > tr > td > a:hover {
 .button-fill-all:hover {
 }
 
+.summary-col-name .summary-col-sum {
+    border-right: 1px solid #575757;
+}
+
 .soladmin-summary-row:hover {
     background: var(--dark-grey-4) !important;
 }
+
+.soladmin-summary-row:nth-child(2n) {
+    background: var(--dark-grey-3) !important;
+}
+
+.soladmin-summary-row:nth-child(2n):hover {
+    background: var(--dark-grey-4) !important;
+}
+
 
 table.list tr.alert td {
     background: #490808 !important;
@@ -1078,6 +1091,27 @@ body.order-edit .config-add ul.configs-groups > li ul li a:hover {
 body.order-edit .add-buttons > a,
 body.order-edit .add-buttons > a > span {
     color: var(--dark-grey) !important;
+}
+
+.soladmin-summary-col-name {
+    background: var(--dark-grey-2) !important;
+}
+
+.summary-col-name {
+    border-right: 1px solid var(--light-grey) !important;
+}
+
+.summary-col-amount {
+    border-right: 1px solid var(--light-grey) !important;   
+}
+
+.summary-order-rows {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid var(--lighter-grey) !important;*/
+    border-width: 0 1px 0;
 }
 
 .config-price.config-price-new-customer .new-customer .tabs li.active a {
