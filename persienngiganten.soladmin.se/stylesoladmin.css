@@ -212,6 +212,19 @@ a.button.remove:hover span {
     color: var(--grey);
 }
 
+.fill-form-btn {
+ text-transform: uppercase;
+    color: #fff !important;
+    border-color: var(--light-grey) !important;
+    background: var(--dark-grey) !important;
+    height: 36px;
+    font-size: 11px;
+}
+
+.fill-form-btn:hover {
+    background: var(--lighter-grey) !important;
+}
+
 
 
 a.button.button-r:hover {
