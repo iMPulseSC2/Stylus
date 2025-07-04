@@ -1,0 +1,1944 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* Variables */
+:root {
+    --dark-grey: #202020;
+    --color--main-white: #fff;
+    --untitled-ui--white: white;
+    --orange: #ef7701;
+    --grey-2: #868686;
+    --grey: #c7c6c6;
+    --dark-orange: #c05f00;
+    --light-grey: #575757;
+    --darker-grey: #0e0e0e;
+    --dark-grey-2: #242424;
+    --color--main-accent: #ef7701;
+    --dark-grey-3: #2e2e2e;
+    --dark-grey-4: #171717;
+    --lighter-grey: #c7c6c64d;
+    --color--main-button-text: #fff;
+    --color--main-text: #fff;
+    --blue: #182935;
+
+    --color--lighter-gray: #c7c6c64d;
+    --color--secondary-dark: #0e0e0e;
+    --red: red;
+    --p: Montserrat, sans-serif;
+    --body: Montserrat, sans-serif;
+    --color--main-gray: #c7c6c6;
+    --color--main-dark: #202020;
+
+    --now-indicator: #f55e57;
+}
+
+
+.soladmin-pulse {
+    animation: soladmin-pulse-anim 1.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    outline: 1px solid var(--lighter-grey) !important;
+    outline-offset: 0px !important;
+    background-color: #fff5ec !important;
+    box-shadow: 0 0 0 4px #c7c6c64d, 0 2px 4px 0 #82828220 !important;
+    color: #222 !important;
+    transition: background 0.8s, box-shadow 0.8s, outline-width 0.8s;
+}
+@keyframes soladmin-pulse-anim {
+    0% {
+        background-color: #fff5ec;
+        box-shadow: 0 0 0 0 #91919140, 0 2px 4px 0 #55555520;
+        outline-width: 1px;
+    }
+    30% {
+        background-color: #ffe3c2;
+        box-shadow: 0 0 0 12px #91919140, 0 2px 6px 0 #55555520;
+        outline-width: 1px;
+    }
+    60% {
+        background-color: #fff5ec;
+        box-shadow: 0 0 0 8px #91919140, 0 2px 3px 0 #55555520;
+        outline-width: 1px;
+    }
+    100% {
+        background-color: transparent;
+        box-shadow: none;
+        outline-width: 0px;
+    }
+}
+
+
+/* Flytta offert */
+#config-formula > div > ul {
+    border: 1px solid var(--light-grey);
+}
+
+#config-formula > div > ul > li {
+    padding: 5px;
+    background: var(--dark-grey-3);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+
+#config-formula > div > ul > li:nth-child(odd) {
+    background: var(--dark-grey-2)
+}
+
+#config-formula > div > ul > li > div.right {
+    float: none;
+}
+
+#config-formula > div > ul > li > div.right > div {
+    border: 1px solid var(--orange);
+    width: auto;
+    display: flex;
+    align-content: center
+}
+
+#config-formula > div > ul > li > div.right > div input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    background-color: var(--orange);
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+
+/* FONTS */
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body,
+html {
+    font-family: 'Montserrat', verdana, sans-serif;
+    background-color: var(--dark-grey);
+}
+
+.main {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 13px;
+    color: var(--color--main-text);
+    -webkit-box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--dark-grey);
+}
+
+body,
+td,
+th,
+option,
+select,
+input,
+textarea {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 13px;
+    color: var(--color--main-white);
+}
+
+div.box-form.box-form-order-notice.box-form-float > div > div > textarea {
+    min-height: 8rem !important;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    background: var(--dark-grey-4);
+}
+
+/* Buttons */
+input[type=submit] {
+    -webkit-appearance: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+
+input[type=submit],
+.button-yellow {
+    background: var(--orange) !important;
+    color: var(--dark-grey-4) !important;
+    border-radius: 4px;
+    border-color: var(--orange) !important;
+}
+
+input[type=submit]:hover,
+.button-yellow {
+    background: var(--dark-orange) !important;
+}
+
+.button-yellow {
+    background: var(--orange) !important;
+    color: var(--dark-grey-4);
+    border-radius: 25px;
+    transition: 0.2s ease;
+}
+
+.button-yellow:hover {
+    background: var(--dark-orange) !important;
+}
+
+a.button.button-r {
+    background: var(--orange);
+    color: var(--dark-grey-4);
+    transition: 0.2s ease;
+    border-color: var(--orange);
+    display: flex;
+    align-items: center;
+}
+
+.button-icon-text {
+    color: var(--color--main-text) !important;
+}
+
+a.button.remove:hover {
+    background: #a21313 !important;
+}
+a.button.remove:hover span {
+    color: var(--grey);
+}
+
+.fill-form-btn {
+ text-transform: uppercase;
+    color: #fff !important;
+    border-color: var(--light-grey) !important;
+    background: var(--dark-grey) !important;
+    height: 36px;
+    font-size: 11px;
+}
+
+.fill-form-btn:hover {
+    background: var(--lighter-grey) !important;
+}
+
+
+
+a.button.button-r:hover {
+    background: var(--dark-orange);
+}
+
+a.button.button-r:hover span {
+    color: var(--color--main-text);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks .block .field a.button {
+    background: var(--dark-grey-4);
+    border-color: var(--orange);
+    color: var(--color--main-text);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks .block .field a.button:hover {
+    border-color: var(--dark-orange);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks div.edit-config a {
+    border-color: var(--orange);
+    background: var(--dark-grey-4);
+}
+
+body.order-edit ul.order-rows li div.row-data .blocks div.edit-config a:hover {
+    border-color: var(--dark-orange);
+}
+
+table.list td ul.buttons a {
+    margin: 0;
+    border: solid 1px var(--light-grey) !important;
+}
+
+/* End Buttons */
+/* Form */
+input[type=search]:hover,
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+input[type=tel]:hover,
+input[type=password]:hover,
+input[type=date]:hover,
+input[type=time]:hover,
+input[type=phone]:hover,
+textarea:hover {
+    border-color: var(--dark-orange) !important;
+}
+
+input[type=search]:focus-visible,
+input[type=text]:focus-visible,
+input[type=email]:focus-visible,
+input[type=number]:focus-visible,
+input[type=tel]:focus-visible,
+input[type=password]:focus-visible,
+input[type=date]:focus-visible,
+input[type=time]:focus-visible,
+input[type=phone]:focus-visible,
+textarea:focus-visible {
+    border-color: var(--orange) !important;
+}
+
+/* Remove the default white outline */
+input[type=search]:focus-visible,
+input[type=text]:focus-visible,
+input[type=email]:focus-visible,
+input[type=number]:focus-visible,
+input[type=tel]:focus-visible,
+input[type=password]:focus-visible,
+input[type=date]:focus-visible,
+input[type=time]:focus-visible,
+input[type=phone]:focus-visible,
+textarea:focus-visible {
+    outline: 0px;
+}
+
+
+input[type=search],
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=time],
+input[type=phone],
+textarea {
+    border: 1px solid var(--dark-grey-3) !important;
+    background-color: var(--dark-grey-3) !important;
+    color: var(--untitled-ui--white) !important;
+    border-radius: 5px;
+    height: auto;
+    margin-bottom: 0;
+    padding: .5rem .875rem;
+    line-height: 1.5;
+    transition: all .2s;
+    box-shadow: 0 1px 2px #1018280d;
+    accent-color: var(--orange) !important;
+}
+
+
+option,
+select,
+input,
+textarea {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 13px;
+    background-color: var(--dark-grey-3) !important;
+    color: var(--color--main-text);
+    box-shadow: 0 1px 2px #1018280d;
+    border: 1px solid var(--dark-grey-4) !important;
+}
+
+.filter-form .box-filter .field-submit div.btn-submit-loader {
+    border-radius: 25px;
+    background: var(--dark-grey-4);
+    border: 1px solid var(--dark-orange) !important;
+}
+
+/* Radio buttons */
+.config .values .value label {
+    background: var(--dark-grey);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.config .values .value label:hover {
+    background: var(--dark-grey-4);
+    border-color: var(--dark-orange);
+}
+
+
+.config .values .value label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    background-color: var(--orange);
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Add a custom dot inside when checked */
+.config .values .value label input[type="radio"]:checked {
+    border-color: var(--dark-orange) !important;
+    background-color: var(--dark-grey-3) !important;
+}
+
+.config .values .value label input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background: white !important;
+    border-radius: 50%;
+}
+
+.config .values .value label:has(input[type="radio"]:checked) {
+    background: var(--dark-grey);
+    border-color: var(--orange) !important;
+}
+
+.config .values .value label:has(input[type="radio"]):hover {
+    border-color: var(--dark-orange) !important;
+}
+
+/* Radio buttons for offerter */
+.input-box label {
+    background: var(--dark-grey);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-box label:hover {
+    background: var(--dark-grey-4);
+    border-color: var(--dark-orange);
+}
+
+.input-box label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--light-grey);
+    border-radius: 50%;
+    background-color: var(--orange);
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Add a custom dot inside when checked */
+.input-box label input[type="radio"]:checked {
+    border-color: var(--dark-orange) !important;
+    background-color: var(--dark-grey-3) !important;
+}
+
+.input-box label input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background: white !important;
+    border-radius: 50%;
+}
+
+.input-box label:has(input[type="radio"]:checked) {
+    background: var(--dark-grey);
+    border-color: var(--orange) !important;
+}
+
+
+
+/* End form */
+a {
+    color: var(--orange);
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-orange);
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: #FFF;
+}
+
+
+/* div.flash .ok {
+    background: var(--orange);
+    color: var(--color--main-text);
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+div.flash .ok {
+    background: #ffffff00;
+}
+
+div.flash .error {
+    background: #ffffff00;
+}
+
+div.flash .notice {
+    background: #ffffff00;
+}
+
+div.flash {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 7s ease;
+}
+
+.ok-checkmark-span-wrapper {
+    background-image: linear-gradient( to right, #00ED5130 20%,
+    #00ED5100 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.ok-checkmark-span-wrapper:hover {
+    border-color: #00ED5130;
+}
+
+.error-x-span-wrapper {
+    background-image: linear-gradient( to right, #F0424850 20%,
+    #F0424800 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.error-x-span-wrapper:hover {
+    border-color: #F0424850;
+}
+
+.notice-excl-span-wrapper {
+    background-image: linear-gradient( to right, #FFD42650 20%,
+    #FFD42600 80%) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #242C32;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 1px solid var(--dark-grey);
+    transition: border-color 0.2s ease;
+}
+
+.notice-excl-span-wrapper:hover {
+    border-color: #FFD42650;
+}
+
+/* Login Page */
+body.login .main .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey);
+}
+
+body.login .main .content .loginbox {
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    background: var(--dark-grey-2);
+    box-shadow: 0 0 12px var(--darker-grey);
+    border-radius: 15px;
+}
+
+/* End Login Page */
+/* MENU BAR */
+.header div.menu ul.menu li a {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-grey);
+    color: #FFF;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    font-weight: 550;
+    height: 100%;
+    -webkit-transition: color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.header {
+    background: var(--dark-grey-2);
+    transition: .2s;
+    border: 1px solid var(--light-grey);
+    border-width: 0 0 1px 0;
+}
+
+.header div.menu ul.menu li a:active {
+    color: var(--color--main-white);
+}
+
+div.sub-menu {
+    float: left;
+    width: 100%;
+    background: var(--darker-grey);
+    color: #FFF;
+}
+
+@media screen and (min-width: 1100px) {
+    .header div.menu ul.menu li ul {
+        background: var(--dark-grey);
+        border: 1px solid var(--light-grey);
+        border-width: 0 1px 1px 1px;
+    }
+
+    .header div.menu ul.menu li ul:hover {
+        background: var(--dark-grey);
+    }
+}
+
+.header div.menu ul.menu li a:hover {
+    display: flex;
+    background-color: var(--dark-orange);
+}
+
+
+.header div.menu ul.menu li a:hover {
+    color: var(--color-main-white);
+}
+
+
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > a {
+    background-color: var(--dark-grey);
+}
+
+
+/* Admin button */
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > a:hover {
+    background: var(--orange);
+}
+
+.header div.menu ul.menu li:hover a,
+.header div.menu ul.menu li.selected a,
+.header div.menu ul.menu li.active a {
+    background-color: var(--orange);
+}
+
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul > li > a {
+    background-color: var(--dark--grey);
+}
+
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul > li:hover {
+    background-color: var(--dark--grey);
+}
+
+/* Ordrar Page */
+/* Pågående montage */
+div.box-form h2 {
+    background: var(--dark-grey-3);
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.box-form .body {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+div.box-form {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid var(--light-grey);
+    background: var(--dark-grey);
+}
+a.button {
+    display: inline-block;
+    color: var(--dark-grey-2);
+    color: var(--color--main-text);
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    border: solid 1px var(--light-grey);
+    transition: 0.2s ease;
+}
+a.button:hover {
+    background: var(--dark-grey-3);
+}
+
+a.button span {
+    transition: 0.2s ease;
+}
+a.button:hover span {
+    display: flex;
+    color: var(--orange);
+}
+
+/* END Ordrar Page*/
+/* Ordrar Sub Menu */
+div.sub-menu ul li.active a {
+    color: var(--orange);
+}
+
+div.sub-menu ul li a {
+    color: var(--colors-main-text);
+}
+
+div.sub-menu ul li a:hover {
+    color: var(--dark-orange);
+}
+
+div.sub-menu ul li a {
+
+    font-size: 11px;
+}
+
+/* Leverantör popup */
+div.popup div.popup-content {
+    background: var(--dark-grey);
+}
+
+div.popup div.popup-content a.close {
+    color: var(--grey) !important;
+    border: 5px solid transparent;
+    border-width: 6px 7px 5px 8px;
+    border-radius: 100px;
+    font-size: 22px;
+}
+
+div.popup div.popup-content a.close:hover {
+    border-width: 6px 7px 5px 8px;
+    background: var(--dark-grey-3);
+}
+
+/* Spara button */
+body.orders-mount div.save {
+    border: 1px solid var(--grey-2);
+    border-width: 1px 1px 0px 1px;
+    background: var(--dark-grey-2);
+}
+
+/* Admin drop down */
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul a {
+    transition: 0.2s ease;
+}
+
+body > div.main > div.header > div.menu > ul.menu.admin-menu > li > ul:hover {
+    background-color: var(--dark-grey);
+    color: var(--orange);
+}
+
+/* End Menu Bar */
+/* News */
+body.panel .main .content .news ul li {
+    padding: 16px;
+    border: 1px solid var(--light-grey);
+    margin-bottom: 8px;
+    background: #262626;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body.panel .main .content .news ul li:hover {
+
+    background-color: var(--dark-grey-2);
+}
+
+body.panel .main .content .news ul li a h4 div span.date {
+    font-weight: normal;
+    font-size: 11px;
+    color: #eaeaea;
+}
+
+body.panel .main .content .news ul li a .created-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eaeaea;
+}
+
+body.panel .main .content .calendar h3 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    color: #FFF;
+}
+
+body.panel .main .content .calendar .box-content {
+    border: 1px solid var(--light-grey);
+    ;
+    padding: 16px;
+    background: #262626;
+}
+
+body.panel .main .content .stats {
+    border: 1px solid var(--light-grey);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: #262626;
+}
+
+body.panel .main .content .stats .graph .extra_stats .data {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    color: #FFF;
+}
+
+body.panel .main .content .stats form .show-buttons div label {
+    display: flex;
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid var(--light-grey);
+    color: #FFF;
+}
+
+/* Selected button */
+body.panel .main .content .stats form .show-buttons div input[type="radio"]:checked + label {
+    background: var(--orange) !important;
+    border-color: var(--orange) !important;
+    color: var(--color--main-text) !important;
+}
+
+body.panel .main .content .stats form .show-buttons div label:hover {
+    background: var(--dark-orange);
+    border-color: var(--orange);
+}
+
+/* More News */
+body > div.main > div.content > table > tbody > tr > td:nth-child(1) a {
+    color: var(--color--main-text);
+    font-weight: 400 !important;
+}
+body > div.main > div.content > table > tbody > tr > td:nth-child(3) a {
+    font-weight: 400 !important;
+}
+body > div.main > div.content > table > tbody > tr > td > b > a,
+body > div.main > div.content > table > tbody > tr > td > a {
+    color: var(--color--main-text) !important;
+    font-weight: 600;
+}
+
+body > div.main > div.content > table > tbody > tr > td > a:hover {
+    color: var(--dark-orange) !important;
+}
+
+
+
+/* End News Page */
+/* Offerter Page */
+@media only screen and (min-width: 1100px) {
+    .desktop-only {
+        background-color: var(--darker) border-color: var(--lighter-grey);
+    }
+}
+
+.button-fill-all {}
+.button-fill-all:hover {}
+
+.summary-col-name .summary-col-sum {
+    border-right: 1px solid #575757;
+}
+
+.soladmin-summary-row:hover {
+    background: var(--dark-grey-4) !important;
+}
+
+.soladmin-summary-row:nth-child(2n) {
+    background: var(--dark-grey-3) !important;
+}
+
+.soladmin-summary-row:nth-child(2n):hover {
+    background: var(--dark-grey-4) !important;
+}
+
+.order-rows-foot {
+    /* background: var(--dark-grey) !important;*/
+}
+.sum-row {
+    background: var(--dark-grey) !important;
+}
+
+
+table.list tr.alert td {
+    background: #490808 !important;
+}
+
+body.order-edit ul.order-rows.order-row-list li:nth-child(2n) .row-data {
+    background: var(--dark-grey);
+}
+
+body.order-edit ul.order-rows li div.row-data {
+    background: var(--dark-grey);
+    border: 1px solid var(--lighter-grey);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filter-form .box-filter {
+    border: 1px solid var(--light-grey);
+    background: var(--dark-grey-2);
+    padding: 10px 0 0 10px;
+}
+
+.filter-form .box-filter .field label {
+    padding-top: 0;
+    font-size: 13px;
+    color: var(--color--main-text);
+}
+
+table.list th.order {
+    padding: 0;
+    border: 1px solid var(--light-grey);
+    background: var(--darker-grey);
+    border-bottom: 0;
+}
+
+ul.tabs li a {
+    border-inline: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+ul.tabs li.active a {
+    background: var(--dark-grey-4);
+    border-inline: 1px solid var(--dark-orange);
+}
+
+ul.tabs li a:hover {
+    background: var(--dark-grey-4) !important;
+}
+
+table.list td {
+    border-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    color: var(--color--main-text);
+}
+
+table.list tbody tr:hover {
+    background: var(--dark-grey-4);
+}
+
+table.list tbody tr:nth-child(odd) {
+    background: var(--dark-grey-2);
+}
+
+table.list tbody tr:nth-child(odd):hover {
+    background: var(--dark-grey-4);
+}
+
+body.order-edit ul.order-rows.order-row-list li:hover {
+    background: var(--dark-grey-4);
+}
+
+body.order-edit ul.order-rows.order-row-list li:nth-child(2n):hover {
+    background: var(--dark-grey-4);
+}
+
+#box-booking-data > div > div.field.field-notice.field-textarea > textarea {
+    min-height: 8rem !important;
+}
+
+#mount > div > div.default-mount > textarea {
+    min-height: 8rem !important;
+}
+
+.icon-remove_red_eye {
+    color: var(--grey) !important;
+}
+
+table.list .pagination .pages a.active {
+    background: var(--orange);
+    color: #262626;
+    transition: 0.2s ease;
+}
+table.list .pagination .pages a.active:hover {
+    background: var(--dark-orange);
+    color: #262626;
+    transition: 0.2s ease;
+}
+
+table.list .pagination .pages a {
+    float: left;
+    font-weight: normal;
+    padding: 5px 15px;
+    text-decoration: none;
+    background: var(--dark-grey-3);
+    color: #FFF;
+    margin-left: 3px;
+    border-radius: 2px;
+    transition: 0.2s ease;
+    border: solid 1px var(--dark-grey-4);
+}
+
+body > div.main > div.content > form > div > div > textarea {
+    min-height: 8rem !important;
+}
+
+/* Produkt/Fritext Sub menu */
+body.order-edit .product-add .products .product-content div.list td {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+table.list .pagination .pages a:hover {
+    background: var(--dark-grey-2);
+}
+
+/* END Offerter Page */
+/* Order Page */
+body.order-edit .top .info table th,
+body.order-edit .top .info table td {
+    border: 1px solid var(--light-grey);
+}
+
+body.order-edit ul.order-rows {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--lighter-grey);
+    border-width: 0 1px 0;
+}
+body.order-edit ul.order-rows li {
+    border-bottom: 1px solid var(--light-grey);
+    background: var(--dark-grey-2);
+}
+
+/* Download documents */
+body.order-edit div.order-download ul li a.link {
+    color: var(--color--main-text);
+    background: var(--dark-grey-2);
+}
+body.order-edit div.order-download ul li a.link:hover {
+    background: var(--dark-grey-3);
+}
+
+/* Priskoll Page */
+body.pricecheck .filter-form-fixed .box-filter {
+    display: flex;
+    border: 1px solid var(--grey);
+    background: var(--darker-grey);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+body.pricecheck .filter-form-fixed .box-filter .field-search span {
+    color: var(--grey) !important;
+}
+
+body.pricecheck ul.configs-groups > li ul li a,
+body.order-edit .config-add ul.configs-groups > li ul li a {
+    background: var(--dark-grey);
+    border: 1px solid var(--lighter-grey);
+    border-radius: 5px;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body.pricecheck ul.configs-groups > li ul li a:hover,
+body.order-edit .config-add ul.configs-groups > li ul li a:hover {
+    background: var(--dark-grey-3);
+    border: 1px solid var(--lighter-grey);
+}
+
+.config .values .value {
+    background: var(--dark-grey-3);
+    border: 1px solid var(--light-grey);
+}
+.config .values .value:hover {
+    background: var(--dark-grey-2);
+    border-color: var(--lighter-grey);
+}
+
+.config .values .value.active {
+    background: var(--dark-grey);
+    border-color: var(--orange);
+}
+
+.config .values .options-no-children .value.active {
+    background: var(--dark-grey) !important;
+    border-color: var(--dark-orange) !important;
+}
+.config .values .options-no-children .value.active:hover {
+    background: var(--dark-grey) !important;
+}
+
+.config .values .value .option:hover {
+    border: var(--orange);
+}
+
+.config-price {
+    background: var(--darker-grey);
+    color: var(--grey);
+}
+
+.config-price a.button {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--dark-grey-2);
+}
+.config-price a.button:hover {
+    background: var(--dark-orange);
+}
+
+/* Skapa offert from Priskoll */
+.result {
+    background: var(--dark-grey) !important;
+}
+
+
+/* Skapa offert Page */
+body.order-edit .add-buttons > a,
+body.order-edit .add-buttons > a > span {
+    color: var(--dark-grey) !important;
+}
+
+.soladmin-summary-col-name {
+    background: var(--dark-grey-2) !important;
+}
+
+.summary-col-name {
+    border-right: 1px solid var(--light-grey) !important;
+}
+
+.summary-col-amount {
+    border-right: 1px solid var(--light-grey) !important;
+}
+
+.summary-order-rows {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid var(--lighter-grey) !important;*/
+    border-width: 0 1px 0;
+}
+
+.config-price.config-price-new-customer .new-customer .tabs li.active a {
+    background: var(--dark-grey-2);
+}
+
+.input-box label {
+    background: var(--dark-grey-2);
+    padding: 10px 10px 10px 5px;
+    border: 1px solid var(--light-grey);
+}
+
+.input-box input[type="radio"]:checked label {
+    border-color: var(--orange) !important;
+    background: #000 !important;
+}
+
+.input-box label:hover {
+    background: var(--dark-grey-4);
+}
+
+.button-bookmark {
+    width: 34px !important;
+    height: 34px !important;
+}
+
+.button-bookmark:hover {
+    color: var(--orange) !important;
+}
+
+/* Vävinformation */
+.config .values div.help div.help-content,
+.config .values div.fabric_front-info div.help-content,
+.config .values div.fabric-info div.help-content {
+    background: var(--dark-grey);
+}
+
+body > div.main > div.content > form > div.box-form.customer-settings > div > div.customer-buttons > a.button-r.button.button-icon > span {
+    color: #fff !important;
+}
+
+#mount > div > div.extra-mount > a > span {
+    color: #fff;
+}
+
+body.order-edit .product-add .products .menu ul li a {
+    background: var(--dark-grey-2);
+    border-color: var(--light-grey);
+}
+
+body.order-edit table.list tbody tr:nth-child(2n + 1) {
+    background: var(--dark-grey-3)
+}
+body.order-edit table.list tbody tr:nth-child(2n + 1):hover {
+    background: var(--darker-grey);
+}
+
+body.order-edit .product-search {
+    background: var(--dark-grey)
+}
+
+#user-select-0 > div > a {
+    background: var(--orange);
+    border-color: var(--orange);
+}
+#user-select-0 > div > a:hover {
+    background: var(--dark-orange);
+}
+body.booking .order-calendar-holder .order-calendar,
+body.order-edit .order-calendar-holder .order-calendar {
+    background: var(--dark-grey);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block.onclick:hover {
+    border: 2px dashed var(--darker-grey);
+    background: var(--orange);
+}
+
+ul.tabs li a {
+    color: var(--color--main-white);
+}
+
+ul.tabs li a:hover {
+    background-color: var(--dark-grey);
+}
+.config-price.config-price-new-customer .new-customer .tabs li a {
+    border: 1px solid var(--light-grey);
+    height: 36px;
+}
+
+.config-price.config-price-new-customer .new-customer .tabs li a:hover {
+    border-color: var(--orange);
+}
+
+.config .values .options .help-block .help-button {
+    background: #f3c828;
+    color: var(--dark-grey-2);
+    transition: background 0.2s ease;
+}
+.config .values .options .help-block .help-button:hover {
+    color: var(--dark-grey-2);
+    background: #bd9a18;
+}
+
+body.order-edit ul.order-rows.order-rows-head li {
+    background: var(--dark-grey);
+    border-bottom: 2px solid #444445;
+}
+
+body.order-edit ul.order-rows.order-rows-foot {
+    border: 0;
+    margin-bottom: 30px;
+    background: var(--dark-grey);
+}
+
+body.order-edit ul.order-rows li {
+    background: var(--dark-grey-2);
+}
+
+body.order-edit ul.order-rows.order-row-list li:nth-child(2n) {
+    background: var(--dark-grey-3);
+}
+
+body.order-edit ul.order-rows li div.col-name {
+    border-right: 1px solid var(--grey);
+}
+
+body.order-edit ul.order-rows li div.price-block div.col-amount,
+body.order-edit ul.order-rows li div.price-block div.col-price,
+body.order-edit ul.order-rows li div.price-block div.col-discount,
+body.order-edit ul.order-rows li div.price-block div.col-tg,
+body.order-edit ul.order-rows li div.price-block div.col-tb {
+    border-right: 1px solid var(--light-grey);
+}
+
+body.order-edit ul.order-rows li div.col-row-number,
+body.order-edit ul.order-rows li div.col-name,
+body.order-edit ul.order-rows li div.price-block div,
+body.order-edit ul.order-rows li div.col-icons {
+    border-right: 1px solid var(--light-grey);
+}
+
+body.order-edit div.col-name .notice,
+body.order-edit div.col-name .notice-extra {
+    color: var(--grey);
+}
+
+.box {
+    border: 1px solid var(--light-grey);
+    background: var(--dark-grey);
+}
+
+
+
+/* END Priskoll Page */
+/* Kundbesök Page */
+/* Customer info */
+body.booking form.default .booking-customer .booking-delivery,
+body.booking form.default .booking-customer .booking-address {
+    width: 49%;
+    border: 1px solid var(--light-grey);
+}
+/* Not planned booking */
+#box-booking-data > div > div.field.field-not-planned > div > label {
+    background: var(--dark-grey-3);
+    border: 1px solid var(--lighter-grey);
+}
+#box-booking-data > div > div.field.field-not-planned > div > label:hover {
+    border-color: var(--orange);
+}
+
+body > div.main > div.content > form > div > div.field.field-order_information.field-textarea > textarea {
+    min-height: 8rem !important;
+}
+
+/* Produkt Page */
+.config .values {
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid var(--light-grey);
+    border-radius: 2px;
+}
+
+.config .values .head {
+    background: var(--dark-grey-3);
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-main-white);
+}
+
+.config .values .options {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background: var(--dark-grey-2);
+}
+
+.config .values .value .values .head {
+    background: var(--dark-grey-3);
+}
+
+/* END Produkt Page */
+/* Kalender Page */
+div.mobile-only > a {
+    outline: solid 8px transparent;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-flex;
+}
+
+div.mobile-only > a:hover {
+    outline: solid 8px var(--dark-grey-3);
+    border-radius: 50%;
+    color: var(--orange);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .search-result ul li a.popup-link:hover {
+    background: var(--color--secondary-dark);
+}
+
+div.full-calendar .calendar-content div.left-column .users,
+div.full-calendar .calendar-content div.left-column .types,
+div.full-calendar .calendar-content div.left-column .view {
+    border-color: var(--grey-2);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head {
+    background: var(--dark-grey-2);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .column {
+    background: var(--dark-grey-3);
+    font-size: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+/* Top header */
+div.full-calendar .calendar-content div.calendar-holder {
+    border-top: 1px solid var(--light-grey);
+}
+
+/* Time panel */
+div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .times .block {
+    background: var(--dark-grey);
+    border-left: 0;
+}
+
+/* Event background block First */
+div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block.block-first {
+    border-bottom: 1px dotted var(--light-grey);
+    background: var(--dark-grey);
+}
+/* Event background block Second */
+div.full-calendar .calendar-content div.calendar-holder .calendar-week .calendar-body .block {
+    background: var(--dark-grey);
+    border-bottom: 1px solid var(--grey-2);
+    border-left: 1px solid var(--light-grey);
+}
+div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .column.today a {
+    background: var(--dark-grey-4);
+    /* border: 1px solid var(--orange);
+    border-width: 0px 0px 2px 0px;*/
+}
+
+div.full-calendar .top .navigation .date-header span.week {
+    background: var(--darker-grey);
+}
+
+/* Month calendar */
+div.full-calendar .calendar-content div.left-column .mini-calendar {
+    background: var(--dark-grey-4);
+}
+
+div.full-calendar .calendar-content div.left-column .mini-calendar table th.week,
+div.full-calendar .calendar-content div.left-column .mini-calendar table td.week {
+    background: var(--dark-grey-3);
+}
+
+/* Weekday */
+div.full-calendar .calendar-content div.left-column .mini-calendar table th,
+div.full-calendar .calendar-content div.left-column .mini-calendar table td.inactive {
+    color: var(--light-grey);
+}
+
+/* Current day */
+div.full-calendar .calendar-content div.left-column .mini-calendar table th.today a,
+div.full-calendar .calendar-content div.left-column .mini-calendar table td.today a {
+    background: var(--orange);
+    color: var(--darker-grey);
+}
+
+/* Selected day */
+div.full-calendar .calendar-content div.left-column .mini-calendar table th.active a,
+div.full-calendar .calendar-content div.left-column .mini-calendar table td.active a {
+    background: var(--light-grey);
+    color: var(--color--main-text);
+}
+
+div.full-calendar .calendar-content div.left-column .users ul li {
+    border-radius: 300px;
+}
+
+div.full-calendar .calendar-content div.left-column .view {
+    padding-right: 12px;
+}
+
+div.full-calendar .calendar-content div.left-column .types {
+    padding-right: 12px;
+}
+
+div.full-calendar .calendar-content div.left-column .types ul li {
+    border-radius: 300px;
+}
+
+/* Hover over users */
+div.full-calendar .calendar-content div.left-column .users ul li:hover,
+div.full-calendar .calendar-content div.left-column .types ul li:hover,
+div.full-calendar .calendar-content div.left-column .view ul li:hover {
+    background: var(--dark-grey-3);
+}
+
+/* Popup */
+.mount-shadow .mount-popup {
+    background: var(--dark-grey);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .event a:hover {
+    color: var(--orange);
+}
+
+a.close-info {
+    color: var(--grey) !important;
+    border: 5px solid transparent;
+    border-width: 6px 7px 5px 8px;
+    border-radius: 100px;
+}
+
+a.close-info:hover {
+    border-width: 6px 7px 5px 8px;
+    background: var(--dark-grey-3);
+}
+
+div.full-calendar .calendar-content div.left-column .users {
+    padding-right: 12px;
+}
+div.full-calendar .calendar-content div.left-column .view ul li {
+    border-radius: 300px;
+}
+/* Scrollbar */
+div.full-calendar .calendar-content div.left-column {
+    scrollbar-color: var(--dark-grey-3) var(--light-grey);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .calendar-week {
+    scrollbar-color: var(--dark-grey-3) var(--light-grey);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .event a.event-link {
+    box-shadow: inset 0 0 0px transparent;
+    transition: 0.1s ease;
+}
+div.full-calendar .calendar-content div.calendar-holder .event:hover a.event-link {
+    box-shadow: inset 0 0 40px #000;
+}
+
+/* Search bar */
+div.full-calendar .top .search form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grey-2);
+    border-radius: 2px;
+    width: 100%;
+    background: var(--dark-grey);
+}
+
+/* Search result */
+div.full-calendar .calendar-content div.calendar-holder .search-result {
+    background: var(--dark-grey);
+    scrollbar-color: var(--dark-grey-3) var(--light-grey);
+}
+
+div.full-calendar .calendar-content div.calendar-holder .calendar-week .now_marker {
+    position: absolute;
+    width: 100%;
+    background: var(--now-indicator);
+    height: 2px;
+}
+
+.loader {
+    background: #0000009c !important;
+}
+
+/* Sidebar button */
+div.full-calendar .top h1 a {
+    border: 1px solid var(--grey);
+    background: var(--dark-grey-3);
+    color: var(--grey);
+}
+
+div.full-calendar .top h1 a:hover {
+    background: var(--light-grey);
+}
+
+/* END Kalender Page */
+/* Kundkort Page */
+ul.tabs {
+    background: var(--dark-grey-2);
+    margin-bottom: 20px;
+    border: 1px solid var(--light-grey);
+}
+/* END Kundkort Page */
+/* Admin Pages */
+/* Konfigurationer Sub page */
+table.list th a {
+    color: var(--orange);
+}
+
+table.list th a:hover {
+    color: var(--dark-orange);
+}
+
+/* Inställningar Sub page*/
+/* Live-offert */
+.box-mail {
+    border: 1px solid var(--light-grey);
+}
+
+.box-mail h2 {
+    background: var(--dark-grey-3);
+    border: 1px solid var(--light-grey);
+    border-width: 0px 0px 1px 0px;
+}
+
+.box-mail .box-mail-content {
+    border: 0px solid var(--light-grey);
+}
+
+/* Statistik Sub page */
+body.stats-graph .content .left-column form .field .filter-data .radios div input[type="radio"]:checked + label {
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+body.stats-graph .content .left-column form .field .filter-data .radios div input {
+    border: 1px solid var(--grey);
+    transition: 0.2s ease;
+}
+
+body.stats-graph .content .left-column form .field .filter-data .radios div input:hover + label {
+    background: var(--dark-orange);
+    border: 1px solid var(--dark-orange);
+}
+
+/* END Admin Pages */
+/* Kundoffert - länkad sida */
+div.holder-login {
+    background: var(--dark-grey);
+}
+
+div.holder-login .content {
+    background: var(--dark-grey-2);
+    border: 1px solid var(--light-grey)
+}
+
+.block.quote .holder {
+    background: var(--dark-grey-2);
+    border: 1px solid var(--light-grey)
+}
+div.box-info,
+div.no-thanks {
+    background: var(--dark-grey-3);
+    border: 1px solid #CCC;
+}
+
+.holder .box {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.fabric-engine,
+.fabric-info,
+.field-edit {
+    background: var(--dark-grey);
+}
+
+/* MOBILE */
+@media screen and (max-width: 1100px) {
+
+    div.flash {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .header div.menu ul.menu li a {
+        font-size: 13px;
+        font-weight: 550;
+        padding: 7px 0px 7px 10px;
+    }
+
+    .header .mobile-menu-bar a.show-mobile-menu {
+        background: var(--orange);
+    }
+
+    .header div.menu ul.menu li.active ul li a {
+        background: var(--dark-grey-4);
+    }
+
+    div.full-calendar .calendar-content div.left-column {
+        background: var(--dark-grey);
+    }
+
+    .filter-form .box-filter .field ul.radios {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+
+    .filter-form .box-filter .field ul.radios li label {
+        border: 1px solid var(--light-grey);
+        background: var(--dark-grey);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .filter-form .box-filter .field ul.radios li label input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--light-grey);
+        border-radius: 50%;
+        background-color: var(--orange);
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    /* Add a custom dot inside when checked */
+    .filter-form .box-filter .field ul.radios li label input[type="radio"]:checked {
+        border-color: var(--dark-orange) !important;
+        background-color: var(--dark-grey-3) !important;
+    }
+
+    .filter-form .box-filter .field ul.radios li label input[type="radio"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .filter-form .box-filter .field ul.radios li label:has(input[type="radio"]:checked) {
+        border: 1px solid var(--orange);
+        background: var(--dark-grey);
+    }
+    .filter-form .box-filter .field ul.radios li label input[type="radio"]:checked {
+        color: var(--orange);
+    }
+
+    ul.table-list li {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        box-shadow: 0 0 7px #0000007d;
+        background: var(--dark-grey-2);
+        border-left: 5px solid transparent;
+    }
+
+    ul.table-list li:hover {
+        background: var(--dar-grey-4);
+    }
+
+    .filter-form .box-filter .field {
+        border-color: var(--grey-2);
+    }
+
+    ul.table-list.bookings li div.name {
+        color: var(--orange);
+    }
+
+    ul.table-list.bookings li div.booking_id,
+    ul.table-list.bookings li div.booking_type,
+    ul.table-list.bookings li div.address,
+    ul.table-list.bookings li div.user,
+    ul.table-list.bookings li div {
+        color: var(--color--main-text);
+    }
+
+
+    body.customer .block {
+        background: var(--dark-grey);
+    }
+    body.customer .block a {
+        margin-right: 5px;
+    }
+
+    ul.table-list.orders li div.date {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.value {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.user {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.exported a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.order_type_done a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.supplier a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li div.name {
+        color: var(--orange);
+    }
+    ul.table-list.quotes li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.quotes div.order_id,
+    ul.table-list.quotes div.name {
+        color: var(--orange);
+    }
+    ul.table-list.users li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.users li div.name {
+        color: var(--orange);
+    }
+    .filter-form a.show-filter {
+        color: var(--orange);
+    }
+    .header {
+        box-shadow: 0 0 3px #000;
+    }
+    ul.table-list.orders li .data {
+        border-color: var(--grey-2);
+    }
+
+    ul.table-list.users li .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.orders li .remove {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.quotes .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.bookings li .data {
+        border-color: var(--grey-2);
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    div.flash {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    div.full-calendar .calendar-content div.calendar-holder .calendar-week.calendar-head .head .times .week {
+        background: var(--dark-grey-4);
+    }
+
+    ul.table-list.users li div.city {
+        color: var(--color--main-text);
+    }
+    ul.table-list.users li div.phone {
+        color: var(--color--main-text);
+    }
+
+    body.customer .block a {
+        margin-right: 5px;
+    }
+    ul.table-list.orders li div.supplier a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.exported a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.orders li div.order_type_done a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.mounts li div.order_id {
+        color: var(--orange);
+    }
+    ul.table-list.quotes li > a {
+        color: var(--color--main-text);
+    }
+    ul.table-list.quotes div.order_id {
+        color: var(--orange);
+    }
+    ul.table-list.quotes div.name {
+        color: var(--orange);
+    }
+
+    body.order-edit ul.order-rows li div.price-block,
+    body.order-edit ul.order-rows li div.col-name {
+        border-right: 0px solid var(--light-grey);
+    }
+    body.order-edit ul.order-rows li div.price-block div.col-amount,
+    body.order-edit ul.order-rows li div.price-block div.col-price,
+    body.order-edit ul.order-rows li div.price-block div.col-discount,
+    body.order-edit ul.order-rows li div.price-block div.col-tg,
+    body.order-edit ul.order-rows li div.price-block div.col-tb {
+        border-right: 0px solid var(--light-grey);
+    }
+
+    body.order-edit ul.order-rows li div.col-icons a {
+        background: var(--dark-grey-2);
+        border-color: var(--light-grey);
+    }
+    body.order-edit ul.order-rows li div.col-icons a:hover {
+        background: var(--dark-grey-3);
+    }
+    body.order-edit ul.order-rows li div.col-icons a span {
+
+        color: var(--color--main-text);
+    }
+    body.order-edit ul.order-rows li div.col-icons a:hover span {
+        color: var(--orange);
+    }
+
+    body.order-edit ul.order-rows li div.col-icons a.button-remove {
+        background: #c31f1f;
+    }
+    body.order-edit ul.order-rows li div.col-icons a.button-remove:hover span {
+        color: var(--grey) !important;
+    }
+    body.order-edit ul.order-rows.order-rows-head .col-icons a {
+        color: var(--orange);
+    }
+
+    ul.table-list.quotes .data {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.orders li .remove {
+        border-color: var(--grey-2);
+    }
+    ul.table-list.users li .data {
+        border-color: var(--grey-2);
+    }
+
+    body > div.main > div.content {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .soladmin-summary-col-name {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+    }
+
+    .soladmin-summary-row {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+    }
+
+    .mobile-summary-col-name {
+        border-right: 1px solid var(--light-grey) !important;
+        padding: 5px 8px 5px 8px !important;
+    }
+    .mobile-summary-order-name {
+        order: 3 !important;
+    }
+
+    .mobile-summary-order-sum {
+        border-right: 0px !important;
+        order: 1 !important;
+    }
+    .mobile-summary-order-amount {
+        order: 2 !important;
+    }
+    .mobile-summary-head {
+        border-right: 1px solid var(--light-grey) !important;
+    }
+    .mobile-summary-head-sum {
+        padding: 8px;
+    }
+
+    .summary-table-mobile {
+        width: 100% !important;
+    }
+
+    .soladmin-summary-row:hover {
+        background: var(--dark-grey-4) !important;
+    }
+}
