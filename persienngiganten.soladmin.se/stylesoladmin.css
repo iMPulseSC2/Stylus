@@ -1,4 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@-moz-document domain("persienngiganten.soladmin.se") {
+    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
     /* Variables */
     :root {
         --dark-grey: #202020;
@@ -257,6 +258,20 @@
     table.list td ul.buttons a {
         margin: 0;
         border: solid 1px var(--light-grey) !important;
+    }
+    
+    .button-blue {
+        transition: 0.2s ease;
+    }
+    .button-blue:hover {
+        background-color: #2859AF !important;
+    }
+    
+    .button-gray {
+        transition: 0.2s ease;
+    }
+    .button-gray:hover {
+        background-color: #4E4E4E !important;
     }
 
     /* End Buttons */
@@ -1591,6 +1606,7 @@
         border: 1px solid var(--dark-orange);
     }
 
+
     .manufacturing-warning {
         /* Your custom styles here */
         background: #a21313 !important;
@@ -1958,3 +1974,4 @@
             background: var(--dark-grey-4) !important;
         }
     }
+}
