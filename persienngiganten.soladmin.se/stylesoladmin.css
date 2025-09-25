@@ -1,4 +1,4 @@
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
     /* Variables */
     :root {
         --dark-grey: #202020;
@@ -28,6 +28,8 @@
         --color--main-dark: #202020;
 
         --now-indicator: #f55e57;
+        --active-bulk: #5FA5FA;
+        --active-bulk-border: #2286FF;
     }
 
 
@@ -187,6 +189,11 @@
         border-radius: 25px;
         transition: 0.2s ease;
     }
+    
+    .active-bulk {
+        background: var(--active-bulk) !important;
+        border-color: var(--active-bulk-border) !important;
+    }
 
     .button-yellow:hover {
         background: var(--dark-orange) !important;
@@ -272,6 +279,7 @@
     .button-gray:hover {
         background-color: #4E4E4E !important;
     }
+    
 
     /* End Buttons */
     /* Form */
@@ -558,6 +566,41 @@
 
     .notice-excl-span-wrapper:hover {
         border-color: #FFD42650;
+    }
+    
+    .bulk-modal-content {
+        background-color: var(--dark-grey) !important;
+    }
+    
+    .bulk-modal-title {
+        color: var(--color--main-white) !important;
+    }
+    
+    .bulk-modal-selected-product {
+        color: var(--grey) !important;
+    }
+    
+    .bulk-modal-product-name {
+        color: var(--color--main-white) !important;
+    }
+    
+    .bulk-modal-help-text {
+        color: var(--grey) !important;
+    }
+    
+    .bulk-control-panel {
+        background: var(--dark-grey) !important;
+        border-width: 1px !important;
+        border-color: var(--orange) !important;
+    }
+    .bulk-control-progress-container {
+        background-color: var(--dark-grey-3) !important;
+    }
+    .bulk-control-progress-label {
+        color: var(--grey) !important;
+    }
+    .bulk-control-status {
+        color: var(--grey) !important;
     }
 
     /* Login Page */
