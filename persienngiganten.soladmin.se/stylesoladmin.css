@@ -189,7 +189,7 @@
         border-radius: 25px;
         transition: 0.2s ease;
     }
-    
+
     .active-bulk {
         background: var(--active-bulk) !important;
         border-color: var(--active-bulk-border) !important;
@@ -265,21 +265,21 @@
         margin: 0;
         border: solid 1px var(--light-grey) !important;
     }
-    
+
     .button-blue {
         transition: 0.2s ease;
     }
     .button-blue:hover {
         background-color: #2859AF !important;
     }
-    
+
     .button-gray {
         transition: 0.2s ease;
     }
     .button-gray:hover {
         background-color: #4E4E4E !important;
     }
-    
+
 
     /* End Buttons */
     /* Form */
@@ -567,31 +567,31 @@
     .notice-excl-span-wrapper:hover {
         border-color: #FFD42650;
     }
-    
+
     .bulk-modal-content {
         background-color: var(--dark-grey) !important;
     }
-    
+
     .bulk-modal-title {
         color: var(--color--main-white) !important;
     }
-    
+
     .bulk-modal-selected-product {
         color: var(--grey) !important;
     }
-    
+
     .bulk-modal-product-name {
         color: var(--color--main-white) !important;
     }
-    
+
     .bulk-modal-help-text {
         color: var(--grey) !important;
     }
-    
+
     .bulk-control-panel {
         background: var(--dark-grey) !important;
         border-width: 1px !important;
-        border-color: var(--orange) !important;
+        border-color: var(--light-grey) !important;
     }
     .bulk-control-progress-container {
         background-color: var(--dark-grey-3) !important;
