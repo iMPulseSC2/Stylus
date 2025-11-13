@@ -392,8 +392,78 @@
         margin-right: 10px;
     }
 
+    .field.field-user_id ul li label {
+        background: var(--dark-grey) !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid var(--light-grey) !important;
+    }
+
+
+    .field.field-user_id ul li label:has(input[type="checkbox"]:checked) {
+        border-color: var(--orange) !important;
+    }
+
+
+    div.field.field-user_id ul li label input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--light-grey) !important;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+        margin-left: 3px !important;
+        transition: all 0.2s ease;
+    }
+
+    .field.field-user_id ul li label:hover {
+        background: var(--dark-grey-4) !important;
+        border-color: var(--dark-orange) !important;
+    }
+
+
+
+    .field.field-user_id ul li label input[type="checkbox"]:checked {
+        border-color: var(--dark-orange) !important;
+    }
+
+    .field.field-user_id ul li label input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+        background: white !important;
+        border-radius: 50%;
+    }
+
+    .field.field-user_id ul li input[type="checkbox"]:checked {
+        border-color: var(--orange) !important;
+    }
+
+    .field.field-user_id ul li label input[type="checkbox"] {
+        transition: ease 0.2s;
+    }
+
+    .field.field-user_id ul li label input[type="checkbox"]:hover {
+        border-color: var(--dark-orange) !important;
+    }
+
+    div.field.field-user_id ul li label input[type="checkbox"]:checked {
+        border-color: var(--dark-orange) !important;
+        background-color: var(--dark-grey-3) !important;
+    }
+
     /* Add a custom dot inside when checked */
-    .config .values .value label input[type="radio"]:checked {
+    .config .values .value .user_id_5 label input[type="radio"]:checked {
         border-color: var(--dark-orange) !important;
         background-color: var(--dark-grey-3) !important;
     }
@@ -417,6 +487,7 @@
     .config .values .value label:has(input[type="radio"]):hover {
         border-color: var(--dark-orange) !important;
     }
+
 
     /* Radio buttons for offerter */
     .input-box label {
