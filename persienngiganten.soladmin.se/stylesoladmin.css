@@ -392,7 +392,7 @@
         margin-right: 10px;
     }
 
-    .field.field-user_id ul li label {
+    #calendar_create_item_calendar .field.field-user_id ul li label {
         background: var(--dark-grey) !important;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
@@ -403,12 +403,12 @@
     }
 
 
-    .field.field-user_id ul li label:has(input[type="checkbox"]:checked) {
+    #calendar_create_item_calendar .field.field-user_id ul li label:has(input[type="checkbox"]:checked) {
         border-color: var(--orange) !important;
     }
 
 
-    div.field.field-user_id ul li label input[type="checkbox"] {
+    #calendar_create_item_calendar div.field.field-user_id ul li label input[type="checkbox"] {
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -423,18 +423,19 @@
         transition: all 0.2s ease;
     }
 
-    .field.field-user_id ul li label:hover {
+
+    #calendar_create_item_calendar .field.field-user_id ul li label:hover {
         background: var(--dark-grey-4) !important;
         border-color: var(--dark-orange) !important;
     }
 
 
 
-    .field.field-user_id ul li label input[type="checkbox"]:checked {
+    #calendar_create_item_calendar .field.field-user_id ul li label input[type="checkbox"]:checked {
         border-color: var(--dark-orange) !important;
     }
 
-    .field.field-user_id ul li label input[type="checkbox"]:checked::after {
+    #calendar_create_item_calendar .field.field-user_id ul li label input[type="checkbox"]:checked::after {
         content: "";
         position: absolute;
         top: 5px;
@@ -445,19 +446,19 @@
         border-radius: 50%;
     }
 
-    .field.field-user_id ul li input[type="checkbox"]:checked {
+    #calendar_create_item_calendar .field.field-user_id ul li input[type="checkbox"]:checked {
         border-color: var(--orange) !important;
     }
 
-    .field.field-user_id ul li label input[type="checkbox"] {
+    #calendar_create_item_calendar .field.field-user_id ul li label input[type="checkbox"] {
         transition: ease 0.2s;
     }
 
-    .field.field-user_id ul li label input[type="checkbox"]:hover {
+    #calendar_create_item_calendar .field.field-user_id ul li label input[type="checkbox"]:hover {
         border-color: var(--dark-orange) !important;
     }
 
-    div.field.field-user_id ul li label input[type="checkbox"]:checked {
+    #calendar_create_item_calendar div.field.field-user_id ul li label input[type="checkbox"]:checked {
         border-color: var(--dark-orange) !important;
         background-color: var(--dark-grey-3) !important;
     }
