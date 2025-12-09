@@ -895,7 +895,7 @@
             padding: 16px;
             border: 1px solid var(--light-grey);
             margin-bottom: 8px;
-            background: #262626;
+            background: var(--dark-grey-3);
             border-radius: 10px;
             transition: 0.2s ease;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -931,7 +931,7 @@
             border: 1px solid var(--light-grey);
             ;
             padding: 16px;
-            background: #262626;
+            background: var(--dark-grey-3);
         }
 
         body.panel .main .content .stats {
@@ -939,7 +939,7 @@
             padding: 16px;
             display: flex;
             flex-direction: column;
-            background: #262626;
+            background: var(--dark-grey-4);
         }
 
         body.panel .main .content .stats .graph .extra_stats .data {
