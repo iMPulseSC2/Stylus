@@ -8,6 +8,7 @@
             --color--main-accent: #ef7701;
             --dark-orange: #C7563E;
             --grey: #ced1dc;
+            --grey-90p: #ced1dc90;
             --grey-2: #a2a6af;
             --dark-grey: #2d3038;
             --light-grey: #515763;
@@ -110,6 +111,92 @@
             margin-right: 10px;
         }
 
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid var(--light-grey);
+            border-radius: 50%;
+            background-color: var(--orange);
+            cursor: pointer;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:hover {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid var(--dark-orange) !important;
+            border-radius: 50%;
+            background-color: var(--orange);
+            cursor: pointer;
+            position: relative;
+            margin-right: 10px;
+        }
+
+
+        label:has(input[type="radio"]:checked) {
+            border-color: var(--dark-orange) !important;
+        }
+
+        input[type="radio"]:checked {
+            border-color: var(--orange) !important;
+        }
+
+        input[type="radio"]:checked::after {
+            content: "";
+            position: absolute;
+            top: 3.5px;
+            left: 3.5px;
+            width: 6px;
+            height: 6px;
+            background: white !important;
+            border-radius: 50%;
+        }
+
+        input[type="radio"]:checked {
+            /* background: var(--dark-grey); */
+            border-color: var(--orange) !important;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            margin-right: 6px;
+        }
+
+        input[type="checkbox"]:checked::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 6px;
+            height: 6px;
+            border-radius: 30%;
+            background: var(--color--main-white);
+        }
+
+
+
+        input[type="checkbox"]:checked {
+            /* background: var(--dark-grey); */
+            border-color: var(--orange) !important;
+        }
+
+        input[type="checkbox"]:hover {
+            /* background: var(--dark-grey); */
+            border-color: var(--dark-orange) !important;
+        }
 
         /* FONTS */
         .montserrat-regular {
@@ -1192,7 +1279,7 @@
 
         body.pricecheck ul.configs-groups > li ul li a,
         body.order-edit .config-add ul.configs-groups > li ul li a {
-            background: var(--dark-grey);
+            background: var(--dark-grey-3) !important;
             border: 1px solid var(--lighter-grey);
             border-radius: 5px;
             transition: 0.2s ease;
@@ -1201,7 +1288,7 @@
 
         body.pricecheck ul.configs-groups > li ul li a:hover,
         body.order-edit .config-add ul.configs-groups > li ul li a:hover {
-            background: var(--dark-grey-3);
+            background: var(--dark-grey-2) !important;
             border: 1px solid var(--lighter-grey);
         }
 
@@ -1635,11 +1722,14 @@
         }
 
         div.full-calendar .calendar-content div.calendar-holder .event a.event-link {
-            box-shadow: inset 0 0 0px transparent;
-            transition: 0.1s ease;
+            /* box-shadow: 0 0 0px transparent; */
+            border: 1px solid transparent;
+            transition: 0.15s ease;
         }
         div.full-calendar .calendar-content div.calendar-holder .event:hover a.event-link {
-            box-shadow: inset 0 0 40px #000;
+            border-width: 1px;
+            border-color: var(--grey-90p);
+            /* box-shadow: 0 0 8px #FF603F; */
         }
 
         /* Search bar */
