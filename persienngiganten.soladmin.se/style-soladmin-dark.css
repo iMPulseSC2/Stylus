@@ -1132,6 +1132,7 @@
             border: 1px solid var(--light-grey);
             background: var(--dark-grey-2);
             padding: 10px 0 0 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         .filter-form .box-filter .field label {
@@ -1237,6 +1238,15 @@
 
         /* END Offerter Page */
         /* Order Page */
+        
+        /* body.order-edit .top {
+            padding: 12px;
+            margin: 15px;
+            border: 1px solid var(--light-grey);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: unset;
+        }*/
+        
         body.order-edit .top .info table th,
         body.order-edit .top .info table td {
             border: 1px solid var(--light-grey);
@@ -1545,6 +1555,7 @@
             margin-bottom: 5px;
             border: 1px solid var(--light-grey);
             border-radius: 2px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         .config .values .head {
