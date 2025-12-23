@@ -153,8 +153,8 @@
             position: absolute;
             top: 3.5px;
             left: 3.5px;
-            width: 6px;
-            height: 6px;
+            width: 6.5px;
+            height: 6.5px;
             background: white !important;
             border-radius: 50%;
         }
@@ -167,8 +167,8 @@
         input[type="checkbox"] {
             -webkit-appearance: none;
             -moz-appearance: none;
-            width: 14px !important;
-            height: 14px !important;
+            width: 16px !important;
+            height: 16px !important;
             border-radius: 3px;
             cursor: pointer;
             position: relative;
@@ -178,10 +178,10 @@
         input[type="checkbox"]:checked::after {
             content: "";
             position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 6px;
-            height: 6px;
+            top: 3.5px;
+            left: 3.5px;
+            width: 6.5px;
+            height: 6.5px;
             border-radius: 30%;
             background: var(--color--main-white);
         }
@@ -537,10 +537,10 @@
         #calendar_create_item_calendar .field.field-user_id ul li label input[type="checkbox"]:checked::after {
             content: "";
             position: absolute;
-            top: 5px;
-            left: 5px;
-            width: 8px;
-            height: 8px;
+            top: 4px;
+            left: 4px;
+            width: 6.5px;
+            height: 6.5px;
             background: white !important;
             border-radius: 50%;
         }
@@ -1710,11 +1710,12 @@
             border: 5px solid transparent;
             border-width: 6px 7px 5px 8px;
             border-radius: 100px;
+            transition: ease 0.1s;
         }
 
         a.close-info:hover {
             border-width: 6px 7px 5px 8px;
-            background: var(--dark-grey-3);
+            background: var(--light-grey);
         }
 
         div.full-calendar .calendar-content div.left-column .users {
@@ -1915,8 +1916,6 @@
                 flex-direction: column;
                 gap: 3px;
             }
-
-
 
             .filter-form .box-filter .field ul.radios li label {
                 border: 1px solid var(--light-grey);
