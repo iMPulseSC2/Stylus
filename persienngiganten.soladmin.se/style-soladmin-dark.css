@@ -2300,6 +2300,8 @@
 
         .body .order-info {}
 
-        .body .invoice-info {}
+        .body .invoice-info {
+             margin-top: 20px !important;
+        }
         .body .invoice-info > h3 {}
     }
