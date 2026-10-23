@@ -1897,6 +1897,30 @@
 
     /* Inställningar Sub page*/
     /* Live-offert */
+    .holder .products table tr.partial-sum td {
+        background: var(--dark-grey-5);
+    }
+
+    .holder .products table th,
+    .holder .products table td {
+        border-color: var(--light-grey) !important;
+    }
+    .holder .discount-information div {
+        border-color: var(--light-grey);
+        color: var(--red);
+        background: var(--dark-grey);
+    }
+
+    .holder .products table tr td.discount {
+        color: var(--red);
+    }
+    div.complete label a {
+        color: var(--orange) !important;
+    }
+
+    div.complete label input {
+        padding: 6px 6px;
+    }
     .box-mail {
         border: 1px solid var(--light-grey);
     }
@@ -2301,7 +2325,7 @@
         .body .order-info {}
 
         .body .invoice-info {
-             margin-top: 20px !important;
+            margin-top: 20px !important;
         }
         .body .invoice-info > h3 {}
     }
