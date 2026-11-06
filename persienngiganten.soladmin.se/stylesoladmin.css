@@ -778,6 +778,23 @@
         background-color: var(--dark--grey);
     }
 
+    .config-selector {
+    background: var(--dark-grey-2) !important;
+    border-color: var(--light-grey) !important;
+}
+div.config-selector .config-filter div.buttons label span {
+    background: var(--dark-grey-3) !important;
+    border-color: var(--lighter-grey);
+}
+div.config-selector .config-filter div.buttons label span:hover {
+    background: var(--dark-grey-4) !important;
+}
+div.config-selector .config-filter div.buttons label input:checked + span {
+    background: var(--orange) !important;
+    border-color: var(--orange);
+
+}
+
     /* Ordrar Page */
     /* Pågående montage */
     div.box-form h2 {
